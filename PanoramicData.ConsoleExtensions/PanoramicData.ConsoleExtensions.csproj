@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>David Bond</Authors>
+		<Company>Panoramic Data Limited</Company>
+		<Description>Console Extensions</Description>
+		<Copyright>Panoramic Data Limited 2020</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>git@github.com:panoramicdata/PanoramicData.ConsoleExtensions.git</RepositoryUrl>
+		<RepositoryType>GIT</RepositoryType>
+		<PackageTags>Console ReadPassword</PackageTags>
+		<PackageReleaseNotes>Initial release</PackageReleaseNotes>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.0.28">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+</Project>
