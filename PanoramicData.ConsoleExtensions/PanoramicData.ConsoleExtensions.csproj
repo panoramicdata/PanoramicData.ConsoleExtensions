@@ -6,20 +6,42 @@
 		<Authors>David Bond</Authors>
 		<Company>Panoramic Data Limited</Company>
 		<Description>Console Extensions</Description>
-		<Copyright>Panoramic Data Limited 2020</Copyright>
+		<Copyright>Panoramic Data Limited 2020,2022</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryUrl>git@github.com:panoramicdata/PanoramicData.ConsoleExtensions.git</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
-		<PackageTags>Console ReadPassword</PackageTags>
-		<PackageReleaseNotes>Initial release</PackageReleaseNotes>
+		<PackageTags>Console ReadPassword Simple ILogger</PackageTags>
+		<PackageReleaseNotes>Added SimpleLogger</PackageReleaseNotes>
 		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<PackageProjectUrl>https://github.com/panoramicdata/PanoramicData.ConsoleExtensions</PackageProjectUrl>
+		<PackageIcon>PanoramicData.ico</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<EnableNETAnalyzers>False</EnableNETAnalyzers>
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
 		<PackageReference Include="Nerdbank.GitVersioning" Version="3.0.28">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="PanoramicData.ico">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>

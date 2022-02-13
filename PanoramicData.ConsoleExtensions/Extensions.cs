@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 
 namespace PanoramicData.ConsoleExtensions
 {
@@ -20,6 +19,7 @@ namespace PanoramicData.ConsoleExtensions
 						{
 							continue;
 						}
+
 						result.Length--;
 						Console.Write("\b \b");
 						continue;
