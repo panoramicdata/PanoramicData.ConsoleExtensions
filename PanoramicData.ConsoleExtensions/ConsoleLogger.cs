@@ -6,9 +6,9 @@ namespace PanoramicData.ConsoleExtensions
 	{
 		private readonly ConsoleLoggerOptions _consoleLoggerOptions;
 
-		public ConsoleLogger(ConsoleLoggerOptions consoleLoggerOptions)
+		public ConsoleLogger(ConsoleLoggerOptions? consoleLoggerOptions = null)
 		{
-			_consoleLoggerOptions = consoleLoggerOptions;
+			_consoleLoggerOptions = consoleLoggerOptions ?? new();
 		}
 
 		public void Log<TState>(

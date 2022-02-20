@@ -11,7 +11,7 @@
 		<RepositoryUrl>git@github.com:panoramicdata/PanoramicData.ConsoleExtensions.git</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Console ReadPassword Simple ILogger</PackageTags>
-		<PackageReleaseNotes>Added SimpleLogger</PackageReleaseNotes>
+		<PackageReleaseNotes>Made ConsoleLoggerOptions optional.</PackageReleaseNotes>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
