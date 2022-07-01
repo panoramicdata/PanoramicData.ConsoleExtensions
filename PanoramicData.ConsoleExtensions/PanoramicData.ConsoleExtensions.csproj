@@ -11,7 +11,7 @@
 		<RepositoryUrl>git@github.com:panoramicdata/PanoramicData.ConsoleExtensions.git</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>Console ReadPassword Simple ILogger</PackageTags>
-		<PackageReleaseNotes>Made ConsoleLoggerOptions optional.</PackageReleaseNotes>
+		<PackageReleaseNotes>Fixed issue whereby output was sent, even if logging level was disabled.</PackageReleaseNotes>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -23,10 +23,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="..\README.md">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>

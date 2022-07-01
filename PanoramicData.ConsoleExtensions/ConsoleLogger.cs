@@ -18,6 +18,9 @@ namespace PanoramicData.ConsoleExtensions
 			Exception? exception,
 			Func<TState, Exception, string> formatter)
 		{
+			if (!IsEnabled(logLevel))
+				return;
+
 			var oldColor = Console.ForegroundColor;
 			Console.ForegroundColor = logLevel switch
 			{
