@@ -30,7 +30,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="PanoramicData.png" Pack="true" PackagePath="" />
+		<None Include="PanoramicData.png" Pack="True" PackagePath="\" />
 	</ItemGroup>
 
 	<ItemGroup>
