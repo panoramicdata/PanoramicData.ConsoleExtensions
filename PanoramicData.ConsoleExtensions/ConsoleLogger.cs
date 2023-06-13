@@ -6,9 +6,14 @@ namespace PanoramicData.ConsoleExtensions
 	{
 		private readonly ConsoleLoggerOptions _consoleLoggerOptions;
 
-		public ConsoleLogger(ConsoleLoggerOptions? consoleLoggerOptions = null)
+		public ConsoleLogger()
 		{
-			_consoleLoggerOptions = consoleLoggerOptions ?? new();
+			_consoleLoggerOptions = new ConsoleLoggerOptions();
+		}
+
+		public ConsoleLogger(ConsoleLoggerOptions consoleLoggerOptions)
+		{
+			_consoleLoggerOptions = consoleLoggerOptions;
 		}
 
 		public void Log<TState>(
@@ -19,7 +24,9 @@ namespace PanoramicData.ConsoleExtensions
 			Func<TState, Exception, string> formatter)
 		{
 			if (!IsEnabled(logLevel))
+			{
 				return;
+			}
 
 			var oldColor = Console.ForegroundColor;
 			Console.ForegroundColor = logLevel switch
