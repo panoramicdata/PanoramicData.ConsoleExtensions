@@ -10,15 +10,17 @@
 # - .NET SDK installed
 #
 # Usage:
-#   .\publish.ps1                           # Default: Release configuration
+#   .\publish.ps1                           # Default: Release configuration with confirmation
 #   .\publish.ps1 -Configuration Debug      # Custom configuration
 #   .\publish.ps1 -KeyFile "mykey.txt"      # Custom key file
+#   .\publish.ps1 -SkipConfirmation         # Auto-publish without confirmation
 #
 
 # PowerShell script to publish PanoramicData.ConsoleExtensions to NuGet
 param(
     [string]$Configuration = "Release",
-    [string]$KeyFile = "nuget.key"
+    [string]$KeyFile = "nuget.key",
+    [switch]$SkipConfirmation
 )
 
 Write-Host "PanoramicData.ConsoleExtensions NuGet Publisher" -ForegroundColor Green
@@ -117,13 +119,18 @@ Write-Host "Package size: $([math]::Round($packagePath.Length / 1KB, 2)) KB" -Fo
 Write-Host ""
 
 # Confirm publication
-Write-Host "Ready to publish package to NuGet.org" -ForegroundColor Yellow
-Write-Host "Package: $($packagePath.Name)" -ForegroundColor Cyan
-$confirmation = Read-Host "Do you want to proceed? (y/N)"
+if (-not $SkipConfirmation) {
+    Write-Host "Ready to publish package to NuGet.org" -ForegroundColor Yellow
+    Write-Host "Package: $($packagePath.Name)" -ForegroundColor Cyan
+    $confirmation = Read-Host "Do you want to proceed? (y/N)"
 
-if ($confirmation -ne 'y' -and $confirmation -ne 'Y') {
-    Write-Host "Publication cancelled." -ForegroundColor Yellow
-    exit 0
+    if ($confirmation -ne 'y' -and $confirmation -ne 'Y') {
+        Write-Host "Publication cancelled." -ForegroundColor Yellow
+        exit 0
+    }
+}
+else {
+    Write-Host "Skipping confirmation (auto-publish mode)" -ForegroundColor Green
 }
 
 # Publish the package

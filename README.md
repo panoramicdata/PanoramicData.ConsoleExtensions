@@ -115,6 +115,9 @@ A PowerShell script `publish.ps1` is provided for easy publishing to NuGet.org:
 
 # Use a different key file
 .\publish.ps1 -KeyFile "my-api-key.txt"
+
+# Auto-publish without confirmation prompt
+.\publish.ps1 -SkipConfirmation
 ```
 
 **Windows Users**: You can also use `publish.bat` which bypasses PowerShell execution policy restrictions.
