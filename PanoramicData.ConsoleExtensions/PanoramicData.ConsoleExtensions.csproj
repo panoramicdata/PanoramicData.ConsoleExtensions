@@ -6,12 +6,12 @@
 		<Authors>David Bond</Authors>
 		<Company>Panoramic Data Limited</Company>
 		<Description>Console Extensions</Description>
-		<Copyright>Panoramic Data Limited 2020,2022</Copyright>
+		<Copyright>Panoramic Data Limited 2020-2025</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryUrl>git@github.com:panoramicdata/PanoramicData.ConsoleExtensions.git</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
-		<PackageTags>Console ReadPassword Simple ILogger</PackageTags>
-		<PackageReleaseNotes>Fixed issue whereby output was sent, even if logging level was disabled.</PackageReleaseNotes>
+		<PackageTags>Console ReadPassword Simple ILogger Structured Logging Hyperlinks Timestamps</PackageTags>
+		<PackageReleaseNotes>Added structured logging support with timestamps, event IDs, custom formatting, and hyperlink detection. Maintained full backward compatibility.</PackageReleaseNotes>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -19,7 +19,10 @@
 		<PackageIcon>PanoramicData.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-		<EnableNETAnalyzers>False</EnableNETAnalyzers>
+		<EnableNETAnalyzers>True</EnableNETAnalyzers>
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+		<WarningsAsErrors />
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -34,8 +37,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
-		<PackageReference Include="Nerdbank.GitVersioning" Version="3.5.107">
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.6.146">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>

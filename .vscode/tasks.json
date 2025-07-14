@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build-demo",
+			"command": "dotnet",
+			"type": "shell",
+			"args": [
+				"build",
+				"${workspaceFolder}/PanoramicData.ConsoleExtensions.Demo/PanoramicData.ConsoleExtensions.Demo.csproj",
+				"/property:GenerateFullPaths=true",
+				"/consoleloggerparameters:NoSummary"
+			],
+			"group": "build",
+			"presentation": {
+				"reveal": "silent"
+			},
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "build-all",
+			"command": "dotnet",
+			"type": "shell",
+			"args": [
+				"build",
+				"${workspaceFolder}/PanoramicData.ConsoleExtensions.slnx"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "always"
+			},
+			"problemMatcher": "$msCompile"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Run Demo",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "build-demo",
+			"program": "${workspaceFolder}/PanoramicData.ConsoleExtensions.Demo/bin/Debug/net8.0/PanoramicData.ConsoleExtensions.Demo.dll",
+			"args": [],
+			"cwd": "${workspaceFolder}/PanoramicData.ConsoleExtensions.Demo",
+			"console": "integratedTerminal",
+			"stopAtEntry": false
+		}
+	]
+}

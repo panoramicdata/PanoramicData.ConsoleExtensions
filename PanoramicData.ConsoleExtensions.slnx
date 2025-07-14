@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Solution items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitignore" />
+    <File Path="global.json" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+    <File Path="version.json" />
+    <File Path="publish.ps1" />
+    <File Path="publish.bat" />
+    <File Path="nuget.key" />
+  </Folder>
+  <Project Path="PanoramicData.ConsoleExtensions/PanoramicData.ConsoleExtensions.csproj" />
+  <Project Path="PanoramicData.ConsoleExtensions.Demo/PanoramicData.ConsoleExtensions.Demo.csproj" />
+</Solution>
