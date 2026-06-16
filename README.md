@@ -1,3 +1,9 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![NuGet version](https://img.shields.io/nuget/v/PanoramicData.ConsoleExtensions.svg)](https://www.nuget.org/packages/PanoramicData.ConsoleExtensions/)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/grade/PanoramicData.ConsoleExtensions)](https://app.codacy.com/gh/panoramicdata/PanoramicData.ConsoleExtensions/dashboard)
+
 # PanoramicData.ConsoleExtensions
 Extensions for the System.Console namespace
 

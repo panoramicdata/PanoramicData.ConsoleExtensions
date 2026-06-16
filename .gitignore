@@ -167,3 +167,5 @@ WixInstallerApi*.wxs
 
 # NuGet API key file (keep secure!)
 nuget.key
+.vs/
+nuget-key.txt

@@ -1,47 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
-	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Authors>David Bond</Authors>
-		<Company>Panoramic Data Limited</Company>
-		<Description>Console Extensions</Description>
-		<Copyright>Panoramic Data Limited 2020-2025</Copyright>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<RepositoryUrl>git@github.com:panoramicdata/PanoramicData.ConsoleExtensions.git</RepositoryUrl>
-		<RepositoryType>GIT</RepositoryType>
-		<PackageTags>Console ReadPassword Simple ILogger Structured Logging Hyperlinks Timestamps</PackageTags>
-		<PackageReleaseNotes>Added structured logging support with timestamps, event IDs, custom formatting, and hyperlink detection. Maintained full backward compatibility.</PackageReleaseNotes>
-		<LangVersion>latest</LangVersion>
-		<Nullable>enable</Nullable>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<PackageProjectUrl>https://github.com/panoramicdata/PanoramicData.ConsoleExtensions</PackageProjectUrl>
-		<PackageIcon>PanoramicData.png</PackageIcon>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-		<EnableNETAnalyzers>True</EnableNETAnalyzers>
-		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-		<WarningsAsErrors />
-		<GenerateDocumentationFile>True</GenerateDocumentationFile>
-	</PropertyGroup>
-
-	<ItemGroup>
-		<None Include="..\README.md">
-			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
-		</None>
-	</ItemGroup>
-
-	<ItemGroup>
-		<None Include="PanoramicData.png" Pack="True" PackagePath="\" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
-		<PackageReference Include="Nerdbank.GitVersioning" Version="3.6.146">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-	</ItemGroup>
-
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>David Bond</Authors>
+    <Company>Panoramic Data Limited</Company>
+    <Description>Console Extensions</Description>
+    <Copyright>Panoramic Data Limited 2020-2025</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>git@github.com:panoramicdata/PanoramicData.ConsoleExtensions.git</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>Console ReadPassword Simple ILogger Structured Logging Hyperlinks Timestamps</PackageTags>
+    <PackageReleaseNotes>Added structured logging support with timestamps, event IDs, custom formatting, and hyperlink detection. Maintained full backward compatibility.</PackageReleaseNotes>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageProjectUrl>https://github.com/panoramicdata/PanoramicData.ConsoleExtensions</PackageProjectUrl>
+    <PackageIcon>PanoramicData.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageId>PanoramicData.ConsoleExtensions</PackageId>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <NeutralResourcesLanguage>en</NeutralResourcesLanguage>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PanoramicData.png" Pack="True" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Nerdbank.GitVersioning">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>
