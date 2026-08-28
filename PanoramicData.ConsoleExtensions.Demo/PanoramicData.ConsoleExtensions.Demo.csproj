@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/panoramicdata/PanoramicData.ConsoleExtensions</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageId>PanoramicData.ConsoleExtensions.Demo</PackageId>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\PanoramicData.ConsoleExtensions\PanoramicData.ConsoleExtensions.csproj" />
