@@ -11,6 +11,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageId>PanoramicData.ConsoleExtensions.Demo</PackageId>
+    <NeutralResourcesLanguage>en</NeutralResourcesLanguage>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\PanoramicData.ConsoleExtensions\PanoramicData.ConsoleExtensions.csproj" />
