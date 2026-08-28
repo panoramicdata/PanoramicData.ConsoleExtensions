@@ -9,6 +9,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/panoramicdata/PanoramicData.ConsoleExtensions</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\PanoramicData.ConsoleExtensions\PanoramicData.ConsoleExtensions.csproj" />
