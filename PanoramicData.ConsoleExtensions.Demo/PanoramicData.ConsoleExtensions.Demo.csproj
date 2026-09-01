@@ -12,6 +12,8 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageId>PanoramicData.ConsoleExtensions.Demo</PackageId>
     <NeutralResourcesLanguage>en</NeutralResourcesLanguage>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\PanoramicData.ConsoleExtensions\PanoramicData.ConsoleExtensions.csproj" />
