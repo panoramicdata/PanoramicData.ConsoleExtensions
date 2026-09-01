@@ -16,6 +16,12 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\PanoramicData.ConsoleExtensions\PanoramicData.ConsoleExtensions.csproj" />
   </ItemGroup>
   <ItemGroup>
