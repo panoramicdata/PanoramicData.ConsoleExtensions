@@ -173,7 +173,7 @@ internal class Program
 		structuredLogger.LogWarning(new EventId(2001, "Performance"), "Slow query detected: {QueryTime}ms for query {Query}", 
 			1500, "SELECT * FROM large_table");
 		structuredLogger.LogError(new EventId(3001, "Security"), "Failed login attempt for user {UserName} from IP {IPAddress}", 
-			"admin", "192.168.1.100");
+			"admin", "192.0.2.100");
 
 		Console.WriteLine();
 		Console.WriteLine("Notice the consistent formatting with timestamps, log levels, and event IDs.");
